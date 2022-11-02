@@ -25,3 +25,12 @@ sb init
 ```bash
 npm run storybook
 ```
+
+# 忘了添加 ts 支持， cra 如何添加？
+
+[参考链接](https://create-react-app.dev/docs/adding-typescript/)
+
+```bash
+npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+
+```
