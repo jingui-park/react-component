@@ -5,13 +5,15 @@ import "./style/button.css";
 
 
 interface BaseButtonProps {
-  type?: "primary" | "default";
+  type?: "primary" | "default" | "dashed" | "text" | "link";
   className?: string;
   children?: React.ReactNode;
+  // backgroundColor?: string;
+  style?: React.CSSProperties;
 }
 
 const Button = (props: BaseButtonProps) => {
-  const { children, type, className } = props
+  const { children, type, className, style } = props
 
   const cls = classNames({
     "ant-btn": true,
@@ -19,7 +21,7 @@ const Button = (props: BaseButtonProps) => {
     [className as string]: !!className
   })
   return (
-    <button className={cls}>
+    <button className={cls} style={style}>
       {children}
     </button>
   )
