@@ -46,3 +46,16 @@ npm install --save typescript @types/node @types/react @types/react-dom @types/j
 ## 样式位置
 
 <https://unpkg.com/browse/antd@4.24.0/es/button/style/index.css>
+
+# 3. 完善组件单测
+
+```bash
+npm i @testing-library/react
+```
+
+- 组件渲染
+  - render
+- 元素查找
+  - get/query/find
+- 事件触发
+  - fireEvent
