@@ -43,6 +43,13 @@ describe('Buuton test', () => {
     fireEvent.focus(linkElement)
     expect(onFocus).toBeCalled();
   });
+
+  test('small btn', () => {
+    const { container } = render(<Button size="small">click</Button>);
+
+    const smallSizeBtn = container.querySelector(".ant-btn-sm")
+    expect(smallSizeBtn).toBeInTheDocument();
+  });
 })
 
 

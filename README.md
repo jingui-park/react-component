@@ -59,3 +59,5 @@ npm i @testing-library/react
   - get/query/find
 - 事件触发
   - fireEvent
+
+# 4. 组件使用 scss（sass）cra 里面不是很好使用 less （原生支持sass）

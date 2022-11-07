@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames'
 // import "./style/button.css"
-import "./style/button.css";
-
+// import "./style/button.css";
+import "./style/button.scss"
 
 interface BaseButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   type?: "primary" | "default" | "dashed" | "text" | "link";
